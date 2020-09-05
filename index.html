@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JWT Decoder</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left">
+        <p>JWT Input</p>
+        <div>
+          <textarea
+            class="jwt-input"
+            name="jwt"
+            id="jwt"
+            cols="35"
+            rows="15"
+          ></textarea>
+        </div>
+        <button class="decode-button" onclick="decodeJWT();">DECODE</button>
+      </div>
+      <div class="right">
+        <p>JWT Output</p>
+        <textarea
+          class="jwt-output"
+          name="decoded"
+          id="decoded"
+          cols="35"
+          rows="23"
+        ></textarea>
+      </div>
+    </div>
+  </body>
+</html>
